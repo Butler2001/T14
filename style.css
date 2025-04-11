@@ -1,0 +1,54 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Creates responsive columns */
+    gap: 20px; /* Spacing between boxes */
+}
+
+.box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Optional: Style individual boxes differently */
+.box-1 {
+    background-color: #e0f7fa;
+    color: #00acc1;
+}
+
+.box-2 {
+    background-color: #fce4ec;
+    color: #ec407a;
+}
+
+.box-3 {
+    background-color: #e8f5e9;
+    color: #4caf50;
+}
+
+.box-4 {
+    background-color: #fff3e0;
+    color: #ff9800;
+}
+
+.box-5 {
+    background-color: #ede7f6;
+    color: #673ab7;
+}
+
+.box-6 {
+    background-color: #f1f8e9;
+    color: #8bc34a;
+}
+
+/* You can add more specific styles for other boxes if needed */
