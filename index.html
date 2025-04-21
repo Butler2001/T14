@@ -9,77 +9,89 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>My Ongoing Projects <img src="img/Cowboy_on_computer.gif"></h1>
-            <p>A glimpse into what I'm currently building & Completed Projects !</p>
-        </header>
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#the-daily-details">The Daily</a></li>
+                <li><a href="#emulator-details">Emulator</a></li>
+                <li><a href="#the-lab-details">The Lab</a></li>
+                <li><a href="#bullet-journal-details">Notes</a></li>
+                <li><a href="https://phxengine.neocities.org/">Portfolio</a></li>
+                <li><a href="https://mygardenofeden.neocities.org/#">GardenOfEden</a></li>
+            </ul>
+        </aside>
 
-        <section id="projects">
-            <div class="project-card" onclick="showProjectDetails('laptop')">
-                <h3>My Daily Driver Laptop</h3>
-                <p>My trusty laptop I use for daily tasks and development.</p>
+        <div class="main-content">
+            <header>
+                <h1>My Ongoing Projects <img src="img/Cowboy_on_computer.gif" alt=""></h1>
+                <p>A glimpse into what I'm currently building & Completed Projects !</p>
+            </header>
+
+            <section id="projects">
+                <div class="project-card" onclick="showProjectDetails('the-daily')">
+                    <h3>The Daily</h3>
+                    <p>My swiss blade I use for daily tasks and development.</p>
+                </div>
+
+                <div class="project-card" onclick="showProjectDetails('emulator')">
+                    <h3>Rasberry Pi 5 Master Emulator</h3>
+                    <p>Hosting a Retroarch like software that is hosted on a Rasberry pi 5 I have this hooked up to my master bedroom TV so retro gaming now is easier than ever !.</p>
+                </div>
+
+                <div class="project-card" onclick="showProjectDetails('the-lab')">
+                    <h3>The Lab</h3>
+                    <p>
+                        This is where I get all my projects done bassicly I brainstorm in here chill out its the main hub.
+                        The network side of it tho needs work as you can tell and of course I had to throw in a XBOX lol we needed some element of videogame rental store vibes.
+                        The room is a work in progress and also the arrangement will change in the course of its trials.
+                    </p>
+                </div>
+
+                <div class="project-card" onclick="showProjectDetails('bullet-journal')">
+                    <h3>Notes</h3>
+                    <p>Archive of random</p>
+                </div>
+            </section>
+
+            <div id="the-daily-details" class="project-details">
+                <h4>My Daily Driver Laptop - Details</h4>
+                <img src="img/T14.jpg" alt="My Laptop">
+                <img src="img/NEOFETCH.jpg" alt="SPECS">
+                <p class="detail-item"><strong>Model:</strong> Lenovo T14 Generation 1</p>
+                <p class="detail-item"><strong>Brand:</strong> Lenovo</p>
+                <p class="detail-item"><strong>Year:</strong> 2021 (Acquired)</p>
+                <p class="detail-item"><strong>Operating System:</strong> [Pop_OS!]</p>
+                <p class="detail-item"><strong>Processor:</strong> [i7-10510u (8) @ 4.900GHz]</p>
+                <p class="detail-item"><strong>RAM:</strong> [16GB ]</p>
+                <p class="detail-item"><strong>Storage:</strong> [2TB SSD]</p>
+                <p><strong>Description:</strong> Ladies and gentlemen, behold my favorite piece of technology thus far! This Lenovo T14 Generation 1 is what has significantly accelerated my understanding of Linux systems. I was fortunate enough to acquire it from my brother-in-law, who received it as an employee laptop from Carvana. He noticed my growing interest in computers around 2021, while I was working for the family business. He offered it to me for the incredible price of around $80, and the rest, as they say, is history. Installing various operating systems on this machine has provided me with a solid foundation and genuine understanding of what it's all about. Amazing stuff, if you ask me!</p>
+                <button class="back-button" onclick="showProjects()">Back to Projects</button>
             </div>
 
-            <div class="project-card" onclick="showProjectDetails('emulator')">
-                <h3>Rasberry Pi 5 Master Emulator</h3>
-                <p>Hosting a Retroarch like software that is hosted on a Rasberry pi 5 I have this hooked up to my master bedroom TV so retro gaming now is easier than ever !.</p>
-            </div>
-
-            <div class="project-card" onclick="showProjectDetails('The Lab')">
-                <h3>The Lab</h3>
-                <p>
-                    This is where I get all my projects done bassicly I brainstorm in here chill out its the main hub.
-                    The network side of it tho needs work as you can tell and of course I had to throw in a XBOX lol we needed some element of videogame rental store vibes.
-                    The room is a work in progress and also the arrangement will change in the course of its trials.
+            <div id="emulator-details" class="project-details">
+                <h4>Rasberry Pi 5 Running Retro Arch  - Details</h4>
+                <p>So I have expiremented with the Rasberry Pie for about a year now and have actually got my head around the whole project.
+                What I wanted to achieve here was a simple solution to play retro games and also learn along the way. It took trial and error many many months to achieve a framwork I can work with...
+                 I ended up on a "Lakka" base to make things easy i guess lol all I know is that you intially get your boot media ready and its all ready to go after that.
+                  so boom just like that i am up in running like a pro playing to my hearts desire : - )  xD
                 </p>
+                    <img src="img/Front-Pi.JPG" alt="" width="200"> <img src="img/I-O-PORTS.JPG" alt="" width="200"> <img src="img/Power-Bttn.JPG" alt="" width="200">
+                <br>
+                <p>so i got it to work so farrrr</p>
+                <button class="back-button" onclick="showProjects()">Back to Projects</button>
             </div>
 
-            <div class="project-card" onclick="showProjectDetails('photo-dump')">
-                <h3>Photo-dump</h3>
-                <p>Random Photo Dump</p>
+            <div id="the-lab-details" class="project-details">
+                <h4>my thoughts on paper wow exciting : -) </h4>
+                <p></p>
+                <button class="back-button" onclick="showProjects()">Back to Projects</button>
             </div>
-        </section>
 
-        <div id="laptop-details" class="project-details">
-            <h4>My Daily Driver Laptop - Details</h4>
-            <img src="img/T14.jpg" alt="My Laptop">
-            <img src="img/NEOFETCH.jpg" alt="SPECS">
-            <p class="detail-item"><strong>Model:</strong> Lenovo T14 Generation 1</p>
-            <p class="detail-item"><strong>Brand:</strong> Lenovo</p>
-            <p class="detail-item"><strong>Year:</strong> 2021 (Acquired)</p>
-            <p class="detail-item"><strong>Operating System:</strong> [Pop_OS!]</p>
-            <p class="detail-item"><strong>Processor:</strong> [i7-10510u (8) @ 4.900GHz]</p>
-            <p class="detail-item"><strong>RAM:</strong> [16GB ]</p>
-            <p class="detail-item"><strong>Storage:</strong> [2TB SSD]</p>
-            <p><strong>Description:</strong> Ladies and gentlemen, behold my favorite piece of technology thus far! This Lenovo T14 Generation 1 is what has significantly accelerated my understanding of Linux systems. I was fortunate enough to acquire it from my brother-in-law, who received it as an employee laptop from Carvana. He noticed my growing interest in computers around 2021, while I was working for the family business. He offered it to me for the incredible price of around $80, and the rest, as they say, is history. Installing various operating systems on this machine has provided me with a solid foundation and genuine understanding of what it's all about. Amazing stuff, if you ask me!</p>
-            <button class="back-button" onclick="showProjects()">Back to Projects</button>
-        </div>
-
-        <div id="emulator-details" class="project-details">
-            <h4>Rasberry Pi 5 Running Retro Arch  - Details</h4>
-            <p>So I have expiremented with the Rasberry Pie for about a year now and have actually got my head around the whole project.
-            What I wanted to achieve here was a simple solution to play retro games and also learn along the way. It took trial and error many many months to achieve a framwork I can work with...
-             I ended up on a "Lakka" base to make things easy i guess lol all I know is that you intially get your boot media ready and its all ready to go after that.
-              so boom just like that i am up in running like a pro playing to my hearts desire : - )  xD     </p>
-                <img src="img/Front-Pi.JPG" alt="" width="200"> <img src="img/I-O-PORTS.JPG" alt="" width="200"> <img src="img/Power-Bttn.JPG" alt="" width="200">  
-
-
-
-
-
-            <button class="back-button" onclick="showProjects()">Back to Projects</button>
-        </div>
-
-        <div id="The Lab-details" class="project-details">
-            <h4>Lab Details</h4>
-            <p>Detailed information about the third project.</p>
-            <button class="back-button" onclick="showProjects()">Back to Projects</button>
-        </div>
-
-        <div id="photo-dump-details" class="project-details">
-            <h4>Photo Dumps</h4>
-            <p></p>
-            <button class="back-button" onclick="showProjects()">Back To Projects</button>
+            <div id="bullet-journal-details" class="project-details">
+                <h4>my thoughts on paper wow exciting : -) </h4>
+                <p></p>
+                <button class="back-button" onclick="showProjects()">Back to Projects</button>
+            </div>
         </div>
     </div>
 </body>
